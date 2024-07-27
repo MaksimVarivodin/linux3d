@@ -50,7 +50,7 @@ To use this library in your project, follow these steps:
 1. Link the library to your project. In CMake, you can use the `target_link_libraries` command:
 
 ```cmake
-target_link_libraries(your_project_name libengine_lib)
+target_link_libraries(your_project_name engine_lib)
 ```
 
 2. Include the necessary header files from the `include` directory. In C++, you can use the `#include` directive:
