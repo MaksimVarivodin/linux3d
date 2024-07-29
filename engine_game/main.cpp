@@ -2,6 +2,7 @@
 #include <SDL2/SDL.h>
 #include "point.hpp"
 #include "direction.hpp"
+#include "matrix.hpp"
 
 int main()
 {
@@ -9,6 +10,7 @@ int main()
     auto A(point<float, 4>({1, 2, 3, 4}));
     auto B(point<float, 3>({4, 5, 6}));
     auto C(point<float, 4>({7, 8, 9, 10}));
+    matrix<float, 3, 3> mat;
     try
     {
         direction<float, 2> d(array<float, 2>({2, 4}));

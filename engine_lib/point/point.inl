@@ -1,7 +1,6 @@
 #ifndef POINT_INL
 #define POINT_INL
 
-//TODO: regerate docs
 namespace engine_lib
 {
     using namespace std;

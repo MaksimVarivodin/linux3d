@@ -10,4 +10,5 @@ target_include_directories( ${PROJECT_NAME} PUBLIC
         ../engine_lib
         ../engine_lib/point
         ../engine_lib/direction
+        ../engine_lib/matrix
 )
