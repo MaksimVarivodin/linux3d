@@ -1,5 +1,5 @@
 
-# engine_lib
+# Linux 3D-engine Library
 
 Version: 1.0.0
 
@@ -9,7 +9,7 @@ A static library for a future 3D game engine using SDL2.
 
 
 * Basic 2D rendering using SDL2
-* Point, direction classes
+* Point, direction, matrix classes
 * Simple game loop and event handling
 
 ## Installation
