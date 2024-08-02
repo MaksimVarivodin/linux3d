@@ -21,8 +21,8 @@ namespace engine_lib
     template <class T, size_t N>
     class direction : public point<T, N>
     {
-        array<T, N> beginning_; ///< The beginning point of the direction.
-        array<T, N> end_; ///< The end point of the direction.
+        array<T, N> beginning_; /// The beginning point of the direction.
+        array<T, N> end_; /// The end point of the direction.
 
     public:
         /**
@@ -66,6 +66,19 @@ namespace engine_lib
          * @param other The direction to copy from.
          */
         direction<T, N>(const direction<T, N>& other);
+        /**
+         * @brief Retrieves the beginning point of the direction.
+         *
+         * @return An array representing the beginning point coordinates.
+         */
+        array<T, N> get_beginning() const;
+
+        /**
+         * @brief Retrieves the end point of the direction.
+         *
+         * @return An array representing the end point coordinates.
+         */
+        array<T, N> get_end() const;
 
         /**
          * @brief Calculates the length of the direction.

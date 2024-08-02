@@ -48,6 +48,18 @@ namespace engine_lib
     }
 
     template <class T, size_t N>
+    array<T, N> direction<T, N>::get_beginning() const
+    {
+        return beginning_;
+    }
+    template <class T, size_t N>
+    array<T, N> direction<T, N>::get_end() const
+    {
+        return end_;
+    }
+
+
+    template <class T, size_t N>
     T direction<T, N>::length() const
     {
         T sum(0);
@@ -162,6 +174,5 @@ namespace engine_lib
                 return false;
         return true;
     }
-
 }
 #endif
