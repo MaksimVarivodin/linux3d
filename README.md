@@ -1,4 +1,3 @@
-
 # Linux 3D-engine Library
 
 Version: 1.0.0
@@ -7,17 +6,19 @@ A static library for a future 3D game engine using SDL2.
 
 ## Features
 
-
-* Basic 2D rendering using SDL2
-* Point, direction, matrix classes
-* Simple game loop and event handling
+* Point, direction, matrix classes implementation.
+* Simple game loop and event handling.
+* Code test coverage.
 
 ## Installation
 
 ### Prerequisites
 
-* CMake 3.10 or later
-* SDL2 development libraries (libsdl2-dev on Ubuntu/Debian, SDL2.framework on macOS)
+* CMake 3.10 or later;
+* SDL2 development library:
+    * **_libsdl2-dev_** on Ubuntu/Debian;
+    * **_SDL2.framework_** on macOS;
+    * **_SDL2.lib_** on Windows.
 
 ### Build Instructions
 
@@ -55,9 +56,31 @@ target_link_libraries(your_project_name engine_lib)
 
 2. Include the necessary header files from the `include` directory. In C++, you can use the `#include` directive:
 
-```cpp
+```cxx
 #include <engine_lib/point/point.hpp>
 #include <engine_lib/direction/direction.hpp>
+```
+
+To simplify inclusion you could modify your project target include directories. So CMakeLists.txt will look something
+similar to this:
+
+```cmake
+target_link_libraries(${PROJECT_NAME} engine_lib)
+
+target_include_directories(${PROJECT_NAME} PUBLIC
+        ../engine_lib
+        ../engine_lib/point
+        ../engine_lib/direction
+        ../engine_lib/matrix
+        ../engine_lib/[other sub dirs you want to include]
+)
+```
+
+And now includes will look like this:
+
+```cxx
+#include <point.hpp>
+#include <direction.hpp>
 ```
 
 ## License
