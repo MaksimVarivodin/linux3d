@@ -4,7 +4,8 @@
 
 #ifndef DIRECTION_HPP
 #define DIRECTION_HPP
-#include "../includes.hpp"
+#include "../../includes.hpp"
+#include <array>
 #include "../point/point.hpp"
 
 namespace engine_lib

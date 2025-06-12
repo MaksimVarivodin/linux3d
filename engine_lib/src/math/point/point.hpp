@@ -4,7 +4,8 @@
 
 #ifndef POINT_HPP
 #define POINT_HPP
-#include "../includes.hpp"
+#include "../../includes.hpp"
+#include <array>
 
 namespace engine_lib
 {

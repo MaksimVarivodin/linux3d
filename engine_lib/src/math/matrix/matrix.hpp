@@ -4,7 +4,7 @@
 
 #ifndef MATRIX_HPP
 #define MATRIX_HPP
-#include "../includes.hpp"
+#include "../../includes.hpp"
 #include "../point/point.hpp"
 #include "../direction/direction.hpp"
 
